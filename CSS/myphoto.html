@@ -4,10 +4,13 @@
 <meta charset="UTF-8">
 <title>CSS Positioning</title>
 <style>
+    *{
+        margin:0;
+    }
 .container {
     position: relative;
-    width: 1570px;
-    height: 900px;
+    width: 100%;
+    height: 100vh;
 
     background-image: url("image.png");
     background-size: cover;
@@ -16,7 +19,6 @@
 
     border: 2px solid #333;
 }
-
 
     .pos-item {
         position: absolute;
@@ -35,6 +37,22 @@
         right: 10px;
     }
 
+    .top-center{
+        top:20px;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .center-left{
+        top:50%;
+        left:10px
+    }
+
+    .center-right{
+        top:50%;
+        right:10px
+    }
+
     .center {
         top: 50%;
         left: 50%;
@@ -45,6 +63,11 @@
     .bottom-left {
         bottom: 10px;
         left: 10px;
+    }
+
+    .bottom-center{
+        bottom:20px;
+        left:50%;
     }
 
     .bottom-right {
@@ -61,6 +84,11 @@
     <div class="pos-item center">Asfiya Siddiqui</div>
     <div class="pos-item bottom-left">Asfiya Siddiqui</div>
     <div class="pos-item bottom-right">Asfiya Siddiqui</div>
+    <div class="pos-item top-center">Asfiya Siddiqui</div>
+    <div class="pos-item center-left">Asfiya Siddiqui</div>
+    <div class="pos-item center-right">Asfiya Siddiqui</div>
+    <div class="pos-item bottom-center">Asfiya Siddiqui</div>
+    
 </div>
 
 </body>
